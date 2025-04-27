@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin-Panel | Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>👨‍💼 Admin-Bereich</h1>
+
+    <section id="new-product">
+        <h2>➕ Neues Produkt erstellen</h2>
+        <input type="text" id="new-name" placeholder="Produktname" />
+        <input type="number" id="new-price" placeholder="Preis (€)" />
+        <input type="text" id="new-description" placeholder="Beschreibung" />
+        <input type="file" id="new-image" />
+        <br><br>
+        <button onclick="createProduct()">✅ Produkt erstellen</button>
+    </section>
+
+    <hr>
+
+    <section id="product-management">
+        <h2>🛍️ Produkte verwalten</h2>
+        <div id="product-list" class="product-list"></div>
+    </section>
+
+    <hr>
+
+    <section id="edit-section" style="display:none;">
+        <h2>✏️ Produkt bearbeiten</h2>
+        <input type="text" id="edit-name" placeholder="Produktname" />
+        <input type="number" id="edit-price" placeholder="Preis (€)" />
+        <input type="text" id="edit-description" placeholder="Beschreibung" />
+        <input type="file" id="edit-image" />
+        <br><br>
+        <button onclick="saveEdit()">💾 Änderungen speichern</button>
+        <button onclick="cancelEdit()">❌ Abbrechen</button>
+    </section>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
