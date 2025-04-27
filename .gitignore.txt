@@ -1,4 +1,0 @@
-# Ignoriere sensible Dateien und Ordner
-.env
-node_modules/
-uploads/
